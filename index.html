@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYK IA - Workspace</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <h3>Historial</h3>
+            <button onclick="location.reload()" class="new-chat-btn">+ Nuevo Chat</button>
+            <div id="history-list"></div>
+        </aside>
+
+        <div class="chat-container">
+            <header>
+                <div class="dot"></div>
+                <h2>MYK IA</h2>
+            </header>
+
+            <div id="chat-box" class="messages-area">
+                <div class="message bot">
+                    <p>Hola, soy <b>MYK IA</b>. ¿En qué te ayudo?</p>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Escribe un mensaje..." autocomplete="off">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
